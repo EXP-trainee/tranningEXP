@@ -18,7 +18,7 @@
                     @can('is-admin')
                         <a href="{{route('dashboard')}}">Trang Chủ</a>
                     @endcan
-                    <h1>Welcome to Vietdeptrai</h1>
+                    <h1>Welcome to EXP</h1>
                 </div>
             </div>
         </div>

@@ -16,6 +16,5 @@ class UserController extends Controller
         else{
             abort(430);
         }
-        return view('admin.dashboard.dashboard');
     }
 }
