@@ -15,6 +15,10 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    @can('is-admin')
+                        <a href="{{route('dashboard')}}">Trang Chủ</a>
+                    @endcan
+                    <h1>Welcome to Vietdeptrai</h1>
                 </div>
             </div>
         </div>
