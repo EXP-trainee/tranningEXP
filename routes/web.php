@@ -25,3 +25,6 @@ Route::get('/dashboard', 'UserController@dashboard')->name('dashboard');
 Route::resource('infouser', 'infoUserController');
 
 Route::resource('salary', 'SalaryController');
+
+Route::get('/customer', 'UserController@customer')->name('index');
+Route::get('/showcustomer', 'UserController@showcustomer');

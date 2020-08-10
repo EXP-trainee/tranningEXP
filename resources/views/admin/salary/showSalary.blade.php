@@ -49,6 +49,7 @@
                           <th>Bonus</th>
                           <th>Taxation</th>
                           <th>Total</th>
+                          <th>User ID</th>
                           <th>action</th>
                       </tr>
                     </thead>
@@ -62,6 +63,7 @@
                           <td>{{$item->bonus}}</td>
                           <td>{{$item->taxation}}</td>
                           <td>{{$item->total}}</td>
+                          <td>{{$item->users_id}}</td>
                           <td>
                               <a href="{{route('salary.edit',['salary' => $item->id])}}" class="btn btn-primary"><i class="fa fa-edit " aria-hidden="true"></i></a>
                               

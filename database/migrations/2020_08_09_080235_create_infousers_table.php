@@ -21,7 +21,10 @@ class CreateInfousersTable extends Migration
             $table->date('dateofbirth');
             $table->string('sex');
             $table->string('address');
+            $table->integer('users_id')->unsigned();
+            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
+            
         });
     }
 

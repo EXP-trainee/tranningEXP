@@ -16,12 +16,15 @@ class CreateSalariesTable extends Migration
         Schema::create('salaries', function (Blueprint $table) {
             $table->id();
             $table->string('username');
-            $table->int('workdays');
-            $table->int('coefficients_salary');
-            $table->int('bonus');
-            $table->int('taxation');
-            $table->int('total');
+            $table->integer('workdays');
+            $table->integer('coefficients_salary');
+            $table->integer('bonus');
+            $table->float('taxation');
+            $table->integer('total');
+            $table->integer('users_id')->unsigned();
+            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();;
+            
         });
     }
 

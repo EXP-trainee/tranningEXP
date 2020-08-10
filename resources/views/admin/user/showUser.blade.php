@@ -49,6 +49,7 @@
                           <th>Date of Birth</th>
                           <th>Sex</th>
                           <th>Address</th>
+                          <th>User ID</th>
                           <th>action</th>
                       </tr>
                     </thead>
@@ -62,6 +63,7 @@
                           <td>{{$item->dateofbirth}}</td>
                           <td>{{$item->sex}}</td>
                           <td>{{$item->address}}</td>
+                          <td>{{$item->users_id}}</td>
                           <td>
                               <a href="{{route('infouser.edit',['infouser' => $item->id])}}" class="btn btn-primary"><i class="fa fa-edit " aria-hidden="true"></i></a>
                               

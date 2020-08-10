@@ -70,6 +70,11 @@
                   <input value="{{$findSalary->total}}" type="text" name="total" id="" class="form-control" placeholder="" aria-describedby="helpId">
                   <small id="helpId" class="text-muted">yyyy/mm/dd</small>
                 </div>
+                <div class="form-group">
+                  <label for="users_id">User ID </label>
+                  <input value="{{$findSalary->users_id}}" type="text" name="users_id" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                  <small id="helpId" class="text-muted">yyyy/mm/dd</small>
+                </div>
                 {{-- <div class="form-group">
                   <label for="exampleInputFile">File input</label>
                   <div class="input-group">
