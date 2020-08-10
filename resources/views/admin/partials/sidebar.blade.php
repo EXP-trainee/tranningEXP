@@ -40,15 +40,15 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Todo List</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{route('salary.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Product</p>
+                  <p>Salary</p>
                 </a>
               </li>
             </ul>
@@ -59,3 +59,4 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+

@@ -15,9 +15,12 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                
                     @can('is-admin')
-                        <a href="{{route('dashboard')}}">Trang Chủ</a>
+                        <a href="{{route('dashboard')}}">Quản lý user</a>
                     @endcan
+
+                    <a href="{{route('dashboard')}}">Trang Chủ</a>
                     <h1>Welcome to EXP</h1>
                 </div>
             </div>
