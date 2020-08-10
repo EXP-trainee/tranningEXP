@@ -28,4 +28,4 @@ Route::resource('salary', 'SalaryController');
 
 Route::get('/customer', 'UserController@customer')->name('index');
 
-
+Route::get('/showcustomer', 'UserController@showcustomer')->name('show_customer');

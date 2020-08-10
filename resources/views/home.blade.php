@@ -20,7 +20,7 @@
                         <a href="{{route('dashboard')}}">Quản lý user</a>
                     @endcan
 
-                    <a href="{{route('index')}}">Trang Chủ</a>
+                    <a href="{{route('show_customer')}}">Thông tin cá nhân</a>
                     <h1>Welcome to EXP</h1>
                 </div>
             </div>
