@@ -44,6 +44,7 @@ class SalaryController extends Controller
         $salary->bonus = $request->bonus;
         $salary->taxation = $request->taxation;
         $salary->total = $request->total;
+        $salary->user_id = $request->user_id;
         $salary->save();
         return redirect(route('salary.index'));
     }
@@ -87,6 +88,7 @@ class SalaryController extends Controller
         $findUpdate->bonus = $request->bonus;
         $findUpdate->taxation = $request->taxation;
         $findUpdate->total = $request->total;
+        $findUpdate->user_id = $request->user_id;
         $findUpdate->save();
         return redirect(route('salary.index'));
     }

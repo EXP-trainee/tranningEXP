@@ -19,12 +19,10 @@ class CreateSalariesTable extends Migration
             $table->integer('workdays');
             $table->integer('coefficients_salary');
             $table->integer('bonus');
-            $table->float('taxation');
+            $table->double('taxation');
             $table->integer('total');
-            $table->integer('users_id')->unsigned();
-            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade');
-            $table->timestamps();;
-            
+            $table->unsignedBigInteger('user_id');
+            $table->timestamps();
         });
     }
 

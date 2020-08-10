@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
-//use App\NhanVien;
+use App\InfoUser;
 use Illuminate\Support\Facades\Gate;
 
 class UserController extends Controller
@@ -26,9 +26,8 @@ class UserController extends Controller
 
     // public function showcustomer()
     // {
-    //     $user = Auth::user();
-    //     return view('customer.showCustomer', ['user' => $user]);
+    //     $infouser = App\InfoUser::all();
+    //     return view('customer.index', ['infouser' => $infouser]);
     // }
-
 
 }

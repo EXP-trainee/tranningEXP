@@ -72,9 +72,9 @@
                   </div>
 
                   <div class="form-group">
-                    <label for="users_id">User ID</label>
-                    <input type="text" name="users_id" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                    <small id="helpId" class="text-muted">tỉnh /thành phố</small>
+                    <label for="user_id">User ID</label>
+                    <input type="text" name="user_id" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">id cua user dang nhap</small>
                 </div>
                 {{-- <div class="form-group">
                   <label for="exampleInputFile">File input</label>

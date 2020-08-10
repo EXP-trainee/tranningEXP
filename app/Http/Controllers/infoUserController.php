@@ -44,6 +44,7 @@ class infoUserController extends Controller
         $infouser->dateofbirth = $request->dateofbirth;
         $infouser->sex = $request->sex;
         $infouser->address = $request->address;
+        $infouser->user_id = $request->user_id;
         $infouser->save();
         return redirect(route('infouser.index'));
     }
@@ -87,6 +88,7 @@ class infoUserController extends Controller
         $findUpdate->dateofbirth = $request->dateofbirth;
         $findUpdate->sex = $request->sex;
         $findUpdate->address = $request->address;
+        $findUpdate->user_id = $request->user_id;
         $findUpdate->save();
         return redirect(route('infouser.index'));
     }
