@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\InfoUser;
 use App\User;
+use App\Comment;
+use App\Salary;
 use Illuminate\Support\Facades\Gate;
 
 class UserController extends Controller
@@ -29,9 +31,9 @@ class UserController extends Controller
     {
  
         $infouser = User::find(Auth()->id())->infouser;
-  
-        return view('customer.showCustomer', ['infouser' => $infouser]);
+        $salary = User::find(Auth()->id())->salary;
+        $comments = User::find(Auth()->id())->comments;
+        return view('customer.showCustomer', ['infouser' => $infouser,'comments' => $comments,'salary' => $salary]);
         // return $infouser;
     }
-
 }

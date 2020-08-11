@@ -15,7 +15,8 @@ class infoUserController extends Controller
      */
     public function index()
     {
-        $listUser =  InfoUser::all();   
+        $listUser = InfoUser::all();  
+        $listUser = InfoUser::paginate(3);
         return view('admin.user.showUser', ['listUser' => $listUser]);
     }
 

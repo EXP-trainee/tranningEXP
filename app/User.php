@@ -41,6 +41,10 @@ class User extends Authenticatable
     {
         return $this->hasOne('App\InfoUser');
     }
+    public function salary()
+    {
+        return $this->hasOne('App\Salary');
+    }
 
     public function comments()
     {

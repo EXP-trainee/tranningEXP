@@ -21,7 +21,8 @@ class CreateSalariesTable extends Migration
             $table->integer('bonus');
             $table->double('taxation');
             $table->integer('total');
-            $table->unsignedBigInteger('user_id');
+            $table->bigInteger('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

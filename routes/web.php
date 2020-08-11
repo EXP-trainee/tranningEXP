@@ -26,10 +26,6 @@ Route::resource('infouser', 'infoUserController');
 
 Route::resource('salary', 'SalaryController');
 
-Route::get('/customer', 'UserController@customer')->name('index');
-
 Route::get('/showcustomer', 'UserController@showcustomer')->name('show_customer');
-
-Route::get('/showcomments/{id}', 'CommentController@showComments');
 
 Route::get('/show_comments/{id}', 'CommentController@showComments')->name('show_comments');

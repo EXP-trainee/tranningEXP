@@ -52,6 +52,12 @@
                   <p>Salary</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{route('show_customer')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Infomation</p>
+                </a>
+              </li>
             </ul>
 
           </li>     

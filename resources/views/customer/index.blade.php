@@ -1,3 +1,0 @@
-<h3 class="card-title"><a href="{{route('show_comments',['comments' => $item->id])}}"><button class="btn btn-primary">admin comments</button></a></h3>
-<h3 class="card-title"><a href="{{route('show_comments',['comments' => $item->id])}}"><button class="btn btn-primary">hihi comments</button></a></h3>
-<h3 class="card-title"><a href="{{route('show_comments',['comments' => $item->id])}}"><button class="btn btn-primary">Bui viet comments</button></a></h3>
