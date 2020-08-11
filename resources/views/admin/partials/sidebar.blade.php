@@ -32,6 +32,7 @@
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+          
             <ul class="nav nav-treeview">
               <li class="nav-item">
               <a href="{{route('infouser.index')}}" class="nav-link active">
@@ -52,6 +53,7 @@
                 </a>
               </li>
             </ul>
+
           </li>     
         </ul>
       </nav>
