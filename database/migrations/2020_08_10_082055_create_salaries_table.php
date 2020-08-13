@@ -16,10 +16,9 @@ class CreateSalariesTable extends Migration
         Schema::create('salaries', function (Blueprint $table) {
             $table->id();
             $table->string('username');
-            $table->integer('workdays');
-            $table->integer('coefficients_salary');
+            $table->integer('salary');
             $table->integer('bonus');
-            $table->double('taxation');
+            $table->integer('monetary_fine');
             $table->integer('total');
             $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');

@@ -44,10 +44,9 @@
                       <tr>
                           <th>STT</th>
                           <th>Full name</th>
-                          <th>Workdays</th>
-                          <th>Coefficients Salary</th>
+                          <th>Salary</th>
                           <th>Bonus</th>
-                          <th>Taxation</th>
+                          <th>Monetary Fine</th>
                           <th>Total</th>
                           <th>User ID</th>
                           <th>action</th>
@@ -58,10 +57,9 @@
                       <tr>
                           <td>{{$item->id}}</td>
                           <td>{{$item->username}}</td>
-                          <td>{{$item->workdays}}</td>
-                          <td>{{$item->coefficients_salary}}</td>
+                          <td>{{$item->salary}}</td>
                           <td>{{$item->bonus}}</td>
-                          <td>{{$item->taxation}}</td>
+                          <td>{{$item->monetary_fine}}</td>
                           <td>{{$item->total}}</td>
                           <td>{{$item->user_id}}</td>
                           <td>
@@ -79,16 +77,7 @@
                   </table>
                 </div> 
                 <!-- /.card-body -->
-                <div class="card-footer clearfix">
-                  <ul class="pagination pagination-sm m-0 float-right">
-                    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                  </ul>
-                </div>
-              </div>
+
               <!-- /.card -->
             </div>
         <!-- /.row -->

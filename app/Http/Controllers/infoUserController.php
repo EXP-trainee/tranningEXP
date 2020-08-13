@@ -42,6 +42,7 @@ class infoUserController extends Controller
         $infouser->username = $request->username;
         $infouser->email = $request->email;
         $infouser->numberphone = $request->numberphone;
+        $infouser->cmnd = $request->cmnd;
         $infouser->dateofbirth = $request->dateofbirth;
         $infouser->sex = $request->sex;
         $infouser->address = $request->address;
@@ -86,6 +87,7 @@ class infoUserController extends Controller
         $findUpdate->username = $request->username;
         $findUpdate->email = $request->email;
         $findUpdate->numberphone = $request->numberphone;
+        $findUpdate->cmnd = $request->cmnd;
         $findUpdate->dateofbirth = $request->dateofbirth;
         $findUpdate->sex = $request->sex;
         $findUpdate->address = $request->address;

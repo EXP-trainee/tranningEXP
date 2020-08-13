@@ -46,6 +46,7 @@
                           <th>Full name</th>
                           <th>email</th>
                           <th>Number Phone</th>
+                          <th>CMND</th>
                           <th>Date of Birth</th>
                           <th>Sex</th>
                           <th>Address</th>
@@ -60,6 +61,7 @@
                           <td>{{$item->username}}</td>
                           <td>{{$item->email}}</td>
                           <td>{{$item->numberphone}}</td>
+                          <td>{{$item->cmnd}}</td>
                           <td>{{$item->dateofbirth}}</td>
                           <td>{{$item->sex}}</td>
                           <td>{{$item->address}}</td>

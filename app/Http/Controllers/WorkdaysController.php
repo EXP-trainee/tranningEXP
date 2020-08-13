@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Salary;
-use Illuminate\Support\Facades\DB;
 
-class SalaryController extends Controller
+class WorkdaysController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +13,7 @@ class SalaryController extends Controller
      */
     public function index()
     {
-        $listSalary =  Salary::all();   
-        return view('admin.salary.showSalary', ['listSalary' => $listSalary]);
+        //
     }
 
     /**
@@ -26,7 +23,7 @@ class SalaryController extends Controller
      */
     public function create()
     {
-        return view('admin.salary.createSalary');
+        //
     }
 
     /**
@@ -37,15 +34,7 @@ class SalaryController extends Controller
      */
     public function store(Request $request)
     {
-        $salary = new Salary;
-        $salary->username = $request->username;
-        $salary->salary = $request->salary;
-        $salary->bonus = $request->bonus;
-        $salary->monetary_fine = $request->monetary_fine;
-        $salary->total = $request->total;
-        $salary->user_id = $request->user_id;
-        $salary->save();
-        return redirect(route('salary.index'));
+        //
     }
 
     /**
@@ -67,8 +56,7 @@ class SalaryController extends Controller
      */
     public function edit($id)
     {
-        $findSalary = Salary::find($id);
-        return view('admin.salary.editSalary',['findSalary' => $findSalary]);
+        //
     }
 
     /**
@@ -80,15 +68,7 @@ class SalaryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $findUpdate = Salary::find($id);
-        $findUpdate->username = $request->username;
-        $findUpdate->salary = $request->csalary;
-        $findUpdate->bonus = $request->bonus;
-        $findUpdate->monetary_fine = $request->monetary_fine;
-        $findUpdate->total = $request->total;
-        $findUpdate->user_id = $request->user_id;
-        $findUpdate->save();
-        return redirect(route('salary.index'));
+        //
     }
 
     /**
@@ -99,7 +79,6 @@ class SalaryController extends Controller
      */
     public function destroy($id)
     {
-        $findDelete = Salary::find($id)->delete();
-        return redirect(route('salary.index'));
+        //
     }
 }

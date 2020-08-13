@@ -28,4 +28,4 @@ Route::resource('salary', 'SalaryController');
 
 Route::get('/showcustomer', 'UserController@showcustomer')->name('show_customer');
 
-Route::get('/show_comments/{id}', 'CommentController@showComments')->name('show_comments');
+//Route::get('/show_comments/{id}', 'CommentController@showComments')->name('show_comments');

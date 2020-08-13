@@ -40,16 +40,10 @@
                       <input type="text" name="username" id="" class="form-control" placeholder="" aria-describedby="helpId">
                       <small id="helpId" class="text-muted"></small>
                   </div>
-          
+           
                   <div class="form-group">
-                      <label for="workdays">Workdays</label>
-                      <input type="text" name="workdays" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <small id="helpId" class="text-muted"></small>
-                  </div>
-          
-                  <div class="form-group">
-                      <label for="coefficients_salary">Coefficients Salary</label>
-                      <input type="text" name="coefficients_salary" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <label for="salary">Salary</label>
+                      <input type="text" name="alary" id="" class="form-control" placeholder="" aria-describedby="helpId">
                       <small id="helpId" class="text-muted">10 chữ số</small>
                   </div>
           
@@ -60,8 +54,8 @@
                   </div>
           
                   <div class="form-group">
-                      <label for="taxation">Taxation</label>
-                      <input type="text" name="taxation" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <label for="monetary_fine">Monetary Fine</label>
+                      <input type="text" name="monetary_fine" id="" class="form-control" placeholder="" aria-describedby="helpId">
                       <small id="helpId" class="text-muted">nam/nữ/giới tính khác</small>
                   </div>
           
@@ -76,22 +70,7 @@
                     <input type="text" name="user_id" id="" class="form-control" placeholder="" aria-describedby="helpId">
                     <small id="helpId" class="text-muted">id cua user dang nhap</small>
                 </div>
-                {{-- <div class="form-group">
-                  <label for="exampleInputFile">File input</label>
-                  <div class="input-group">
-                    <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="exampleInputFile">
-                      <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                    </div>
-                    <div class="input-group-append">
-                      <span class="input-group-text" id="">Upload</span>
-                    </div>
-                  </div>
-                </div> --}}
-                {{-- <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div> --}}
+                
               </div>
               <!-- /.card-body -->
 

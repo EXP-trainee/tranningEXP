@@ -52,6 +52,12 @@
                       <input type="text" name="numberphone" id="" class="form-control" placeholder="" aria-describedby="helpId">
                       <small id="helpId" class="text-muted">10 chữ số</small>
                   </div>
+
+                  <div class="form-group">
+                    <label for="cmnd"> so chung minh thu </label>
+                    <input type="text" name="cmnd" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">10 chữ số</small>
+                </div>
           
                   <div class="form-group">
                       <label for="dateofbirth">Date of birth </label>

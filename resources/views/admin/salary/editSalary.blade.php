@@ -42,14 +42,8 @@
                 </div>
       
                 <div class="form-group">
-                    <label for="workdays">Workdays</label>
-                    <input value="{{$findSalary->workdays}}" type="text" name="workdays" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                    <small id="helpId" class="text-muted"></small>
-                </div>
-        
-                <div class="form-group">
-                    <label for="coefficients_salary">Coefficients Salary</label>
-                    <input value="{{$findSalary->coefficients_salary}}" type="text" name="coefficients_salary" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <label for="salary">Salary</label>
+                    <input value="{{$findSalary->salary}}" type="text" name="salary" id="" class="form-control" placeholder="" aria-describedby="helpId">
                     <small id="helpId" class="text-muted">10 số</small>
                 </div>
         
@@ -60,8 +54,8 @@
                 </div>
         
                 <div class="form-group">
-                    <label for="taxation">Taxation</label>
-                    <input value="{{$findSalary->taxation}}" type="text" name="taxation" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <label for="monetary_fine">Monetary Fine</label>
+                    <input value="{{$findSalary->monetary_fine}}" type="text" name="monetary_fine" id="" class="form-control" placeholder="" aria-describedby="helpId">
                     <small id="helpId" class="text-muted">tỉnh/thành phố</small>
                 </div>
 

@@ -52,6 +52,12 @@
                     <input value="{{$findInfoUser->numberphone}}" type="text" name="numberphone" id="" class="form-control" placeholder="" aria-describedby="helpId">
                     <small id="helpId" class="text-muted">10 số</small>
                 </div>
+
+                <div class="form-group">
+                  <label for="cmnd">so chung minh tu</label>
+                  <input value="{{$findInfoUser->cmnd}}" type="text" name="cmnd" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                  <small id="helpId" class="text-muted"></small>
+              </div>
         
                 <div class="form-group">
                     <label for="dateofbirth">Date of birth </label>
