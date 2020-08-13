@@ -8,6 +8,7 @@ use App\InfoUser;
 use App\User;
 use App\Comment;
 use App\Salary;
+use App\Workdays;
 use Illuminate\Support\Facades\Gate;
 
 class UserController extends Controller
@@ -33,7 +34,8 @@ class UserController extends Controller
         $infouser = User::find(Auth()->id())->infouser;
         $salary = User::find(Auth()->id())->salary;
         $comments = User::find(Auth()->id())->comments;
-        return view('customer.showCustomer', ['infouser' => $infouser,'comments' => $comments,'salary' => $salary]);
+        $workdays = User::find(Auth()->id())->workdays;
+        return view('customer.showCustomer', ['infouser' => $infouser,'comments' => $comments,'salary' => $salary, 'workdays' => $workdays]);
         // return $infouser;
     }
 }

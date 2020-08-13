@@ -101,6 +101,36 @@
                     </table>
                   </div> 
                   <!-- /.card-body -->
+
+                  <div class="card-body">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>STT</th>
+                          <th> Name</th>
+                          <th>month</th>
+                          <th>workdays</th>
+                          <th>days off</th>
+                          <th>User ID</th>
+
+                        </tr>
+                      </thead>
+                      @foreach ($workdays as $item)
+                      <tbody>
+                        <tr>
+                          <td>{{$item->id}}</td>
+                          <td>{{$item->username}}</td>
+                          <td>{{$item->month}}</td>
+                          <td>{{$item->workdays}}</td>
+                          <td>{{$item->daysoff}}</td>
+                          <td>{{$item->user_id}}</td>
+                        </tr>
+                      </tbody>
+                      @endforeach
+                    </table>
+                  </div> 
+                  <!-- /.card-body -->
+
                   <div class="card-body">
                     <table class="table table-bordered">
                       <thead>

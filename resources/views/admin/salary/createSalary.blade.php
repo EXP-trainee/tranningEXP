@@ -43,26 +43,26 @@
            
                   <div class="form-group">
                       <label for="salary">Salary</label>
-                      <input type="text" name="alary" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <small id="helpId" class="text-muted">10 chữ số</small>
+                      <input type="text" name="salary" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <small id="helpId" class="text-muted"></small>
                   </div>
           
                   <div class="form-group">
                       <label for="bonus">Bonus</label>
                       <input type="text" name="bonus" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <small id="helpId" class="text-muted">yyyy/mm/dd</small>
+                      <small id="helpId" class="text-muted"></small>
                   </div>
           
                   <div class="form-group">
                       <label for="monetary_fine">Monetary Fine</label>
                       <input type="text" name="monetary_fine" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <small id="helpId" class="text-muted">nam/nữ/giới tính khác</small>
+                      <small id="helpId" class="text-muted"></small>
                   </div>
           
                   <div class="form-group">
                       <label for="total">Total</label>
                       <input type="text" name="total" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <small id="helpId" class="text-muted">tỉnh /thành phố</small>
+                      <small id="helpId" class="text-muted"></small>
                   </div>
 
                   <div class="form-group">

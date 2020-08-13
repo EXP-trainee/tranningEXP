@@ -35,7 +35,7 @@
               <div class="card">
                 <div class="card-header">
                   {{-- <h3 class="card-title"><a href="#"><button class="btn btn-primary">thêm nhân viên</button></a></h3> --}}
-                  <h3 class="card-title"><a href="{{route('salary.create')}}"><button class="btn btn-primary">Create InfoUser</button></a></h3>
+                  <h3 class="card-title"><a href="{{route('workdays.create')}}"><button class="btn btn-primary">Create Workdays</button></a></h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -61,9 +61,9 @@
                           <td>{{$item->daysoff}}</td>
                           <td>{{$item->user_id}}</td>
                           <td>
-                              <a href="{{route('workdays.edit',['workdays' => $item->id])}}" class="btn btn-primary"><i class="fa fa-edit " aria-hidden="true"></i></a>
+                              <a href="{{route('workdays.edit',['workday' => $item->id])}}" class="btn btn-primary"><i class="fa fa-edit " aria-hidden="true"></i></a>
                               
-                              <form action="{{route('workdays.destroy',['workdays' => $item->id])}}" method="post">
+                              <form action="{{route('workdays.destroy',['workday' => $item->id])}}" method="post">
                                 @csrf
                                 <input type="hidden"  name="_method" value="DELETE">
                                 <button type="submit" class="btn btn-danger"><i class="fa fa-trash" aria-hidden ="true"></i></button>
