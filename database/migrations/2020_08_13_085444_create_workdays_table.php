@@ -15,6 +15,7 @@ class CreateWorkdaysTable extends Migration
     {
         Schema::create('workdays', function (Blueprint $table) {
             $table->id();
+            $table->string('username');
             $table->integer('month');
             $table->integer('workdays');
             $table->integer('daysoff');

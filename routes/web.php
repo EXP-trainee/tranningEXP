@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,6 +26,8 @@ Route::get('/dashboard', 'UserController@dashboard')->name('dashboard');
 Route::resource('infouser', 'infoUserController');
 
 Route::resource('salary', 'SalaryController');
+
+Route::resource('workdays', 'WorkdaysController');
 
 Route::get('/showcustomer', 'UserController@showcustomer')->name('show_customer');
 
