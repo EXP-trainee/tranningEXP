@@ -27,7 +27,7 @@ Route::resource('infouser', 'infoUserController');
 
 Route::resource('salary', 'SalaryController');
 
-Route::resource('workdays', 'WorkdaysController');
+Route::resource('workdays', 'WorkdayController');
 
 Route::get('/showcustomer', 'UserController@showcustomer')->name('show_customer');
 

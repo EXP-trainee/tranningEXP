@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Workdays extends Model
+class Workday extends Model
 {
     public function user()
     {

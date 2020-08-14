@@ -53,6 +53,6 @@ class User extends Authenticatable
 
     public function workdays()
     {
-        return $this->hasMany(Workdays::class);
+        return $this->hasMany(Workday::class);
     }
 }

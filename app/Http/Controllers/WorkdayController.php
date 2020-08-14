@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Workdays;
-use Illuminate\Support\Facades\DB;
+use App\Workday;
 
-class WorkdaysController extends Controller
+class WorkdayController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +14,7 @@ class WorkdaysController extends Controller
      */
     public function index()
     {
-        $listWorkdays =  Workdays::all();   
+        $listWorkdays =  Workday::all();   
         return view('admin.workdays.index', ['listWorkdays' => $listWorkdays]);
     }
 
@@ -37,7 +36,7 @@ class WorkdaysController extends Controller
      */
     public function store(Request $request)
     {
-        $workdays = new Workdays;
+        $workdays = new Workday;
         $workdays->username = $request->username;
         $workdays->month = $request->month;
         $workdays->workdays = $request->workdays;
@@ -66,7 +65,7 @@ class WorkdaysController extends Controller
      */
     public function edit($id)
     {
-        $findWorkdays = Workdays::find($id);
+        $findWorkdays = Workday::find($id);
         return view('admin.workdays.edit',['findWorkdays' => $findWorkdays]);
     }
 
@@ -97,7 +96,7 @@ class WorkdaysController extends Controller
      */
     public function destroy($id)
     {
-        $findDelete = Workdays::find($id)->delete();
+        $findDelete = Workday::find($id)->delete();
         return redirect(route('workdays.index'));
     }
 }
