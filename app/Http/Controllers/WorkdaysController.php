@@ -16,7 +16,7 @@ class WorkdaysController extends Controller
     public function index()
     {
         $listWorkdays =  Workdays::all();   
-        return view('admin.workdays.showWorkdays', ['listWorkdays' => $listWorkdays]);
+        return view('admin.workdays.index', ['listWorkdays' => $listWorkdays]);
     }
 
     /**
@@ -26,7 +26,7 @@ class WorkdaysController extends Controller
      */
     public function create()
     {
-        return view('admin.workdays.createWorkdays');
+        return view('admin.workdays.create');
     }
 
     /**
@@ -67,7 +67,7 @@ class WorkdaysController extends Controller
     public function edit($id)
     {
         $findWorkdays = Workdays::find($id);
-        return view('admin.workdays.editWorkdays',['findWorkdays' => $findWorkdays]);
+        return view('admin.workdays.edit',['findWorkdays' => $findWorkdays]);
     }
 
     /**

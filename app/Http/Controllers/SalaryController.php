@@ -16,7 +16,7 @@ class SalaryController extends Controller
     public function index()
     {
         $listSalary =  Salary::all();   
-        return view('admin.salary.showSalary', ['listSalary' => $listSalary]);
+        return view('admin.salary.index', ['listSalary' => $listSalary]);
     }
 
     /**
@@ -26,7 +26,7 @@ class SalaryController extends Controller
      */
     public function create()
     {
-        return view('admin.salary.createSalary');
+        return view('admin.salary.create');
     }
 
     /**
@@ -68,7 +68,7 @@ class SalaryController extends Controller
     public function edit($id)
     {
         $findSalary = Salary::find($id);
-        return view('admin.salary.editSalary',['findSalary' => $findSalary]);
+        return view('admin.salary.edit',['findSalary' => $findSalary]);
     }
 
     /**

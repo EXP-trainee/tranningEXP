@@ -17,7 +17,7 @@ class infoUserController extends Controller
     {
         $listUser = InfoUser::all();  
         $listUser = InfoUser::paginate(3);
-        return view('admin.user.showUser', ['listUser' => $listUser]);
+        return view('admin.user.index', ['listUser' => $listUser]);
     }
 
     /**
@@ -27,7 +27,7 @@ class infoUserController extends Controller
      */
     public function create()
     {
-        return view('admin.user.createUser');
+        return view('admin.user.create');
     }
 
     /**
@@ -71,7 +71,7 @@ class infoUserController extends Controller
     public function edit($id)
     {
         $findInfoUser = InfoUser::find($id);
-        return view('admin.user.editUser',['findInfoUser' => $findInfoUser]);
+        return view('admin.user.edit',['findInfoUser' => $findInfoUser]);
     }
 
     /**
