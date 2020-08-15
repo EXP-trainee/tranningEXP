@@ -13,15 +13,7 @@ use Illuminate\Support\Facades\Gate;
 
 class UserController extends Controller
 {
-    public function dashboard()
-    {
-        if(Gate::allows('is-admin')){
-            return view('admin.dashboard.dashboard');
-        }
-        else{
-            abort(430);
-        }
-    }
+
 
     public function customer()
     {
@@ -31,10 +23,10 @@ class UserController extends Controller
     public function showcustomer()
     {
  
-        $infouser = User::find(Auth()->id())->infouser;
-        $salary = User::find(Auth()->id())->salary;
-        $comments = User::find(Auth()->id())->comments;
-        $workdays = User::find(Auth()->id())->workdays;
+        $infouser = User::find(auth()->id())->infouser;
+        $salary = User::find(auth()->id())->salary;
+        $comments = User::find(auth()->id())->comments;
+        $workdays = User::find(auth()->id())->workdays;
         return view('customer.showCustomer', ['infouser' => $infouser,'comments' => $comments,'salary' => $salary, 'workdays' => $workdays]);
         // return $infouser;
     }

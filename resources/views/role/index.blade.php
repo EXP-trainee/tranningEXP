@@ -67,7 +67,6 @@
                     </tbody>
                     @endforeach
                   </table>
-                  {{$listRole->links()}}
                 </div> 
                 <!-- /.card-body -->
 
