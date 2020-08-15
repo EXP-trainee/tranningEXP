@@ -29,6 +29,8 @@ Route::resource('salary', 'SalaryController');
 
 Route::resource('workdays', 'WorkdayController');
 
+Route::resource('role', 'RoleController');
+
 Route::get('/showcustomer', 'UserController@showcustomer')->name('show_customer');
 
 //Route::get('/show_comments/{id}', 'CommentController@showComments')->name('show_comments');
