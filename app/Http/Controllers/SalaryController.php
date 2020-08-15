@@ -82,7 +82,7 @@ class SalaryController extends Controller
     {
         $findUpdate = Salary::find($id);
         $findUpdate->username = $request->username;
-        $findUpdate->salary = $request->csalary;
+        $findUpdate->salary = $request->salary;
         $findUpdate->bonus = $request->bonus;
         $findUpdate->monetary_fine = $request->monetary_fine;
         $findUpdate->total = $request->total;

@@ -31,7 +31,7 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form role="form" action="{{route('workdays.update',['workdays'=>$findWorkdays->id])}}" method="POST">
+            <form role="form" action="{{route('workdays.update',['workday'=>$findWorkdays->id])}}" method="POST">
               @method('PUT')
               <div class="card-body">
                 @csrf

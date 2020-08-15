@@ -25,13 +25,15 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="{{route('dashboard')}}" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
               </p>
             </a>
           </li>
+          
+          @canany("roles.view,create,edit,delete")
           <li class="nav-item">
             <a href="{{route('infouser.index')}}" class="nav-link active">
               <i class="far fa-circle nav-icon"></i>
@@ -50,13 +52,7 @@
               <p>Salary</p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="{{route('show_customer')}}" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Infomation</p>
-            </a>
-          </li>
-          @canany("roles.view,create,edit,delete")
+
           <li class="nav-item">
             <a href="{{route('role.index')}}" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
@@ -64,6 +60,12 @@
             </a>
           </li>
           @endcan
+          <li class="nav-item">
+            <a href="{{route('show_customer')}}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Infomation</p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

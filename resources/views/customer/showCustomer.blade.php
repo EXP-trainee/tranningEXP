@@ -77,10 +77,9 @@
                         <tr>
                           <th>STT</th>
                           <th>Full name</th>
-                          <th>Workdays</th>
-                          <th>Coefficients Salary</th>
+                          <th> Salary</th>
                           <th>Bonus</th>
-                          <th>Taxation</th>
+                          <th>monetary fine</th>
                           <th>Total</th>
                           <th>User ID</th>
                       </tr>
@@ -89,10 +88,9 @@
                         <tr>
                             <td>{{$salary->id}}</td>
                             <td>{{$salary->username}}</td>
-                            <td>{{$salary->workdays}}</td>
-                            <td>{{$salary->coefficients_salary}}</td>
+                            <td>{{$salary->salary}}</td>
                             <td>{{$salary->bonus}}</td>
-                            <td>{{$salary->taxation}}</td>
+                            <td>{{$salary->monetary_fine}}</td>
                             <td>{{$salary->total}}</td>
                             <td>{{$salary->user_id}}</td>
                         </tr>
@@ -131,29 +129,7 @@
                   </div> 
                   <!-- /.card-body -->
 
-                  <div class="card-body">
-                    <table class="table table-bordered">
-                      <thead>
-                        <tr>
-                          <th>User ID</th>
-                          <th>User name</th>
-                          <th>Comment</th>
-                      </tr>
-                      </thead>
-                
-                      @foreach ($comments as $item)
-                        <tbody>
-                          <tr>
-                              <td>{{$item->user_id}}</td>
-                              <td>{{$item->user->name}}</td>
-                              <td>{{$item->comment}}</td>
-                          </tr>
-                        </tbody>
-                      @endforeach
-                
-                    </table>
-                  </div> 
-                  <!-- /.card-body -->
+
               </div>
               <!-- /.card -->
             </div>
