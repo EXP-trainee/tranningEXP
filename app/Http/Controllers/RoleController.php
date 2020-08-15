@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Workday;
 
-class WorkdayController extends Controller
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +13,7 @@ class WorkdayController extends Controller
      */
     public function index()
     {
-        $listWorkdays =  Workday::all();   
-        return view('admin.workdays.index', ['listWorkdays' => $listWorkdays]);
+        //
     }
 
     /**
@@ -25,7 +23,7 @@ class WorkdayController extends Controller
      */
     public function create()
     {
-        return view('admin.workdays.create');
+        //
     }
 
     /**
@@ -36,14 +34,7 @@ class WorkdayController extends Controller
      */
     public function store(Request $request)
     {
-        $workdays = new Workday;
-        $workdays->username = $request->username;
-        $workdays->month = $request->month;
-        $workdays->workdays = $request->workdays;
-        $workdays->daysoff = $request->daysoff;
-        $workdays->user_id = $request->user_id;
-        $workdays->save();
-        return redirect(route('workdays.index'));
+        //
     }
 
     /**
@@ -65,8 +56,7 @@ class WorkdayController extends Controller
      */
     public function edit($id)
     {
-        $findWorkdays = Workday::find($id);
-        return view('admin.workdays.edit',['findWorkdays' => $findWorkdays]);
+        //
     }
 
     /**
@@ -78,14 +68,7 @@ class WorkdayController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $findUpdate = Workday::find($id);
-        $findUpdate->username = $request->username;
-        $findUpdate->month = $request->month;
-        $findUpdate->workdays = $request->workdays;
-        $findUpdate->daysoff = $request->daysoff;
-        $findUpdate->user_id = $request->user_id;
-        $findUpdate->save();
-        return redirect(route('workdays.index'));
+        //
     }
 
     /**
@@ -96,7 +79,6 @@ class WorkdayController extends Controller
      */
     public function destroy($id)
     {
-        $findDelete = Workday::find($id)->delete();
-        return redirect(route('workdays.index'));
+        //
     }
 }
