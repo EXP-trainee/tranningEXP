@@ -38,4 +38,11 @@ class UserController extends Controller
         return view('customer.showCustomer', ['infouser' => $infouser,'comments' => $comments,'salary' => $salary, 'workdays' => $workdays]);
         // return $infouser;
     }
+
+    public function user(){
+        $infouser = User::all()->infouser;
+        $salary = User::all()->salary;
+        $workdays = User::all()->workdays;
+        return view('admin.user.index', ['infouser' => $infouser,'salary' => $salary, 'workdays' => $workdays]);
+    }
 }

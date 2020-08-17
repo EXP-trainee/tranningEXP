@@ -35,9 +35,15 @@
           
           @canany("roles.view,create,edit,delete")
           <li class="nav-item">
-            <a href="{{route('infouser.index')}}" class="nav-link active">
+            <a href="{{route('user')}}" class="nav-link active">
               <i class="far fa-circle nav-icon"></i>
               <p>User</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{route('infouser.index')}}" class="nav-link active">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Infor User</p>
             </a>
           </li>
           <li class="nav-item">
