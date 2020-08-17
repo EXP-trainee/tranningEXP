@@ -66,6 +66,13 @@
           </li>
 
           <li class="nav-item">
+            <a href="{{route('personnel.index')}}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Personnel</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
             <a href="{{route('role.index')}}" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
               <p>Role</p>

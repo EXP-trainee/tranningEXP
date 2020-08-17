@@ -45,11 +45,13 @@
                           <th>STT</th>
                           <th> Name</th>
                           <th> Department </th>
+                          <th>Position</th>
                           <th>workdays</th>
                           <th>days off</th>
                           <th>Bonus</th>
-                          <th>monetary fine</th>
-                          <th>Total salary</th>
+                          <th>Minus/th>
+                          <th>Salary</th>
+                          <th> Salary Total </th>
                           <th>action</th>
                       </tr>
                     </thead>
@@ -60,12 +62,14 @@
                       <tr>
                         <td>{{$user->id}}</td>
                         <td>{{$user->infouser->username}}</td>
-                        <td></td>
+                        <td>{{$user->personnel->departments}}</td>
+                        <td>{{$user->personnel->position}}</td>
                         <td>{{$user->workday->workdays}}</td>
                         <td>{{$user->workday->daysoff}}</td>
-                        <td>{{$user->salary->bonus}}</td>
-                        <td>{{$user->salary->monetary_fine}}</td>
-                        <td>{{$user->salary->total}}</td>
+                        <td>{{$user->bominus->bonus}}</td>
+                        <td>{{$user->bominus->minus}}</td>
+                        <td>{{$user->salary->salary}}</td>
+                        <td></td>
                         <td>
                             <a href="#" class="btn btn-primary"><i class="fa fa-edit " aria-hidden="true"></i></a>
                             

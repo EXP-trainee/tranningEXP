@@ -36,14 +36,14 @@ class UserController extends Controller
  
         $infouser = User::find(auth()->id())->infouser;
         $salary = User::find(auth()->id())->salary;
-        $comments = User::find(auth()->id())->comments;
+        $bominus = User::find(auth()->id())->bominus;
         $workdays = User::find(auth()->id())->workdays;
-        return view('customer.showCustomer', ['infouser' => $infouser,'comments' => $comments,'salary' => $salary, 'workdays' => $workdays]);
+        return view('customer.showCustomer', ['infouser' => $infouser,'bominus' => $bominus,'salary' => $salary, 'workdays' => $workdays]);
         // return $infouser;
     }
 
     public function show_user(){
-        $users = User::with(["infouser","salary","workdays"])->get();
+        $users = User::with(["infouser","salary","workdays" , "bominus", "personnel"])->get();
         // dd($users);
         return view('admin.user.index', compact("users"));
     }

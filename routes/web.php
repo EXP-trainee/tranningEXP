@@ -28,6 +28,8 @@ Route::resource('infouser', 'infoUserController');
 
 Route::resource('salary', 'SalaryController');
 
+Route::resource('personnel', 'PersonnelController');
+
 Route::resource('workdays', 'WorkdayController');
 
 Route::resource('role', 'RoleController');

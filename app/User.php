@@ -47,9 +47,9 @@ class User extends Authenticatable
         return $this->hasOne('App\Salary');
     }
 
-    public function comments()
+    public function personnel()
     {
-        return $this->hasMany(Comment::class);
+        return $this->hasOne('App\Personnel');
     }
 
     public function workdays()
