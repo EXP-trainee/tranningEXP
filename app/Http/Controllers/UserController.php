@@ -43,7 +43,7 @@ class UserController extends Controller
     }
 
     public function show_user(){
-        $users = User::with(["infouser","salary","workdays" , "bominus", "personnel"])->get();
+        $users = User::with(["infouser","salary","workdays" ,"bominus","personnel"])->get();
         // dd($users);
         return view('admin.user.index', compact("users"));
     }

@@ -64,7 +64,11 @@ class User extends Authenticatable
 
     public function bominus()
     {
-        return $this->hasMany('App\Workday');
+        return $this->hasMany('App\Bominus');
+    }
+    public function bominu()
+    {
+        return $this->hasOne('App\Bominus');
     }
 
 }

@@ -31,11 +31,10 @@
       <div class="container-fluid">
         <!-- /.row -->
         <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-12">
               <div class="card">
                 <div class="card-header">
-                  {{-- <h3 class="card-title"><a href="#"><button class="btn btn-primary">thêm nhân viên</button></a></h3> --}}
-                  <h3 class="card-title"><a href="{{route('workdays.create')}}"><button class="btn btn-primary">Create Workdays</button></a></h3>
+                 
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -51,7 +50,7 @@
                           <th>Bonus</th>
                           <th>Minus/th>
                           <th>Salary</th>
-                          <th> Salary Total </th>
+                          <th>Salary Total </th>
                           <th>action</th>
                       </tr>
                     </thead>
@@ -66,8 +65,8 @@
                         <td>{{$user->personnel->position}}</td>
                         <td>{{$user->workday->workdays}}</td>
                         <td>{{$user->workday->daysoff}}</td>
-                        <td>{{$user->bominus->bonus}}</td>
-                        <td>{{$user->bominus->minus}}</td>
+                        <td>{{$user->bominu->bonus}}</td>
+                        <td>{{$user->bominu->minus}}</td>
                         <td>{{$user->salary->salary}}</td>
                         <td></td>
                         <td>

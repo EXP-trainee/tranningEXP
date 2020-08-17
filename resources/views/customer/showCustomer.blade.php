@@ -78,9 +78,7 @@
                           <th>STT</th>
                           <th>Full name</th>
                           <th> Salary</th>
-                          <th>Bonus</th>
-                          <th>monetary fine</th>
-                          <th>Total</th>
+                          <th>Taxation</th>
                           <th>User ID</th>
                       </tr>
                       </thead>
@@ -89,9 +87,7 @@
                             <td>{{$salary->id}}</td>
                             <td>{{$salary->username}}</td>
                             <td>{{$salary->salary}}</td>
-                            <td>{{$salary->bonus}}</td>
-                            <td>{{$salary->monetary_fine}}</td>
-                            <td>{{$salary->total}}</td>
+                            <td>{{$salary->taxation}}</td>
                             <td>{{$salary->user_id}}</td>
                         </tr>
                       </tbody>

@@ -31,7 +31,7 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form role="form" action="{{route('personnel.update',['salary'=>$findPersonnel->id])}}" method="POST">
+            <form role="form" action="{{route('personnel.update',['personnel'=>$findPersonnel->id])}}" method="POST">
               @method('PUT')
               <div class="card-body">
                 @csrf

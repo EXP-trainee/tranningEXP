@@ -16,8 +16,8 @@ class CreatePersonnelsTable extends Migration
         Schema::create('personnels', function (Blueprint $table) {
             $table->id();
             $table->string('username');
-            $table->integer('departments');
-            $table->integer('position');
+            $table->string('departments');
+            $table->string('position');
             $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
