@@ -17,9 +17,7 @@ class CreateSalariesTable extends Migration
             $table->id();
             $table->string('username');
             $table->integer('salary');
-            $table->integer('bonus');
-            $table->integer('monetary_fine');
-            $table->integer('total');
+            $table->integer('taxation');
             $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

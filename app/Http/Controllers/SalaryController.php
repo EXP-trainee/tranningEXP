@@ -47,9 +47,7 @@ class SalaryController extends Controller
         $salary = new Salary;
         $salary->username = $request->username;
         $salary->salary = $request->salary;
-        $salary->bonus = $request->bonus;
-        $salary->monetary_fine = $request->monetary_fine;
-        $salary->total = $request->total;
+        $salary->taxation = $request->taxation;
         $salary->user_id = $request->user_id;
         $salary->save();
         return redirect(route('salary.index'));
@@ -90,9 +88,7 @@ class SalaryController extends Controller
         $findUpdate = Salary::find($id);
         $findUpdate->username = $request->username;
         $findUpdate->salary = $request->salary;
-        $findUpdate->bonus = $request->bonus;
-        $findUpdate->monetary_fine = $request->monetary_fine;
-        $findUpdate->total = $request->total;
+        $findUpdate->taxation = $request->taxation;
         $findUpdate->user_id = $request->user_id;
         $findUpdate->save();
         return redirect(route('salary.index'));

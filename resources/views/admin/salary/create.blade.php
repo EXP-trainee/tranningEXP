@@ -48,20 +48,8 @@
                   </div>
           
                   <div class="form-group">
-                      <label for="bonus">Bonus</label>
-                      <input type="text" name="bonus" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <small id="helpId" class="text-muted"></small>
-                  </div>
-          
-                  <div class="form-group">
-                      <label for="monetary_fine">Monetary Fine</label>
-                      <input type="text" name="monetary_fine" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <small id="helpId" class="text-muted"></small>
-                  </div>
-          
-                  <div class="form-group">
-                      <label for="total">Total</label>
-                      <input type="text" name="total" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <label for="taxation">Taxation</label>
+                      <input type="text" name="taxation" id="" class="form-control" placeholder="" aria-describedby="helpId">
                       <small id="helpId" class="text-muted"></small>
                   </div>
 

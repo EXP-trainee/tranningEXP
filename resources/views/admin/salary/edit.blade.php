@@ -46,22 +46,10 @@
                     <input value="{{$findSalary->salary}}" type="text" name="salary" id="" class="form-control" placeholder="" aria-describedby="helpId">
                     <small id="helpId" class="text-muted">10 số</small>
                 </div>
-        
-                <div class="form-group">
-                    <label for="bonus">Bonus</label>
-                    <input value="{{$findSalary->bonus}}" type="text" name="bonus" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                    <small id="helpId" class="text-muted"></small>
-                </div>
-        
-                <div class="form-group">
-                    <label for="monetary_fine">Monetary Fine</label>
-                    <input value="{{$findSalary->monetary_fine}}" type="text" name="monetary_fine" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                    <small id="helpId" class="text-muted">tỉnh/thành phố</small>
-                </div>
 
                 <div class="form-group">
-                  <label for="total">Total </label>
-                  <input value="{{$findSalary->total}}" type="text" name="total" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                  <label for="taxation">Taxation </label>
+                  <input value="{{$findSalary->taxation}}" type="text" name="taxation" id="" class="form-control" placeholder="" aria-describedby="helpId">
                   <small id="helpId" class="text-muted">yyyy/mm/dd</small>
                 </div>
                 <div class="form-group">
@@ -69,22 +57,6 @@
                   <input value="{{$findSalary->user_id}}" type="text" name="user_id" id="" class="form-control" placeholder="" aria-describedby="helpId">
                   <small id="helpId" class="text-muted"></small>
                 </div>
-                {{-- <div class="form-group">
-                  <label for="exampleInputFile">File input</label>
-                  <div class="input-group">
-                    <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="exampleInputFile">
-                      <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                    </div>
-                    <div class="input-group-append">
-                      <span class="input-group-text" id="">Upload</span>
-                    </div>
-                  </div>
-                </div> --}}
-                {{-- <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div> --}}
               </div>
               <!-- /.card-body -->
 

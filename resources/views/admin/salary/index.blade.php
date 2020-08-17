@@ -58,9 +58,7 @@
                           <td>{{$item->id}}</td>
                           <td>{{$item->username}}</td>
                           <td>{{$item->salary}}</td>
-                          <td>{{$item->bonus}}</td>
-                          <td>{{$item->monetary_fine}}</td>
-                          <td>{{$item->total}}</td>
+                          <td>{{$item->taxation}}</td>
                           <td>{{$item->user_id}}</td>
                           <td>
                               <a href="{{route('salary.edit',['salary' => $item->id])}}" class="btn btn-primary"><i class="fa fa-edit " aria-hidden="true"></i></a>
