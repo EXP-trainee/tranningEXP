@@ -9,7 +9,10 @@ use App\User;
 use App\Comment;
 use App\Salary;
 use App\Workdays;
+use App\Bominus;
 use Illuminate\Support\Facades\Gate;
+
+use function GuzzleHttp\Promise\all;
 
 class UserController extends Controller
 {
@@ -39,10 +42,9 @@ class UserController extends Controller
         // return $infouser;
     }
 
-    public function user(){
-        $infouser = User::all()->infouser;
-        $salary = User::all()->salary;
-        $workdays = User::all()->workdays;
-        return view('admin.user.index', ['infouser' => $infouser,'salary' => $salary, 'workdays' => $workdays]);
+    public function show_user(){
+        $users = User::with(["infouser","salary","workdays"])->get();
+        // dd($users);
+        return view('admin.user.index', compact("users"));
     }
 }

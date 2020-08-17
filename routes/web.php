@@ -32,7 +32,10 @@ Route::resource('workdays', 'WorkdayController');
 
 Route::resource('role', 'RoleController');
 
+Route::resource('bominus', 'BominusController');
+
 Route::get('/showcustomer', 'UserController@showcustomer')->name('show_customer');
-Route::get('/user', 'UserController@user')->name('user');
+
+Route::get('/user', 'UserController@show_user')->name('show_user');
 
 //Route::get('/show_comments/{id}', 'CommentController@showComments')->name('show_comments');

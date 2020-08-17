@@ -35,13 +35,13 @@
           
           @canany("roles.view,create,edit,delete")
           <li class="nav-item">
-            <a href="{{route('user')}}" class="nav-link active">
+            <a href="{{route('show_user')}}" class="nav-link ">
               <i class="far fa-circle nav-icon"></i>
               <p>User</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{route('infouser.index')}}" class="nav-link active">
+            <a href="{{route('infouser.index')}}" class="nav-link ">
               <i class="far fa-circle nav-icon"></i>
               <p>Infor User</p>
             </a>
@@ -50,6 +50,12 @@
             <a href="{{route('workdays.index')}}" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
               <p>Workdays</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{route('bominus.index')}}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Bominus</p>
             </a>
           </li>
           <li class="nav-item">

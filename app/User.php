@@ -54,6 +54,19 @@ class User extends Authenticatable
 
     public function workdays()
     {
-        return $this->hasMany(Workday::class);
+        return $this->hasMany('App\Workday');
     }
+
+    public function workday()
+    {
+        return $this->hasOne('App\Workday');
+    }
+
+    public function bominus()
+    {
+        return $this->hasMany('App\Workday');
+    }
+
 }
+
+ // ->whereYear("created_at",)->where("month", date("m"))

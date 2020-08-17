@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Workday extends Model
+class Bominus extends Model
 {
-    protected $table ="workdays";
+    protected $table ="bominus";
     public function user()
     {
         return $this->belongsTo(User::class);
