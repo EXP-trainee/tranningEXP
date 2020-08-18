@@ -63,8 +63,8 @@
                         <td>{{$user->infouser->username}}</td>
                         <td>{{$user->personnel->departments}}</td>
                         <td>{{$user->personnel->position}}</td>
-                        <td>{{$user->workday->workdays}}</td>
-                        <td>{{$user->workday->daysoff}}</td>
+                        <td>{{$workday_user->workdays}}</td>
+                        <td>{{$workday_user->daysoff}}</td>
                         <td>{{$user->bominu->bonus}}</td>
                         <td>{{$user->bominu->minus}}</td>
                         <td>{{$user->salary->salary}}</td>

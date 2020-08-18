@@ -10,7 +10,9 @@ use App\Comment;
 use App\Salary;
 use App\Workdays;
 use App\Bominus;
+use App\Workday;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\DB;
 
 use function GuzzleHttp\Promise\all;
 
@@ -43,8 +45,10 @@ class UserController extends Controller
     }
 
     public function show_user(){
-        $users = User::with(["infouser","salary","workdays" ,"bominus","personnel"])->get();
-        // dd($users);
-        return view('admin.user.index', compact("users"));
+        $users = User::with(["infouser","salary","workdays","bominus","personnel"])->get();
+        //user2 = User::has('month', '9')->workdays->get();
+        $workday_user = Workday::where('month', 'like', '%9%')->get();
+        dd($workday_user);
+        //return view('admin.user.index', compact("users","workday_user"));
     }
 }
