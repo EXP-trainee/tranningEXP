@@ -46,7 +46,7 @@ class UserController extends Controller
 
     public function show_user(){
         $users = User::with(["infouser","salary","workdays","bominus","personnel"])->get();
-        //user2 = User::has('month', '9')->workdays->get();
+
         $workday_user = Workday::where('month', 'like', '%9%')->get();
         //dd($workday_user);
         return view('admin.user.index', compact("users","workday_user"));

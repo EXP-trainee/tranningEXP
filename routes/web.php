@@ -25,15 +25,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dashboard', 'UserController@dashboard')->name('dashboard');
 
 Route::resource('infouser', 'infoUserController');
-
 Route::resource('salary', 'SalaryController');
-
 Route::resource('personnel', 'PersonnelController');
-
 Route::resource('workdays', 'WorkdayController');
-
 Route::resource('role', 'RoleController');
-
 Route::resource('bominus', 'BominusController');
 
 Route::get('/showcustomer', 'UserController@showcustomer')->name('show_customer');
