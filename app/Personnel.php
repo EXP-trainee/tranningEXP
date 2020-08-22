@@ -9,6 +9,6 @@ class Personnel extends Model
     protected $table ="personnels";
     public function user()
     {
-        return $this->belongsTo(App\User);
+        return $this->belongsTo('App\User');
     }
 }
