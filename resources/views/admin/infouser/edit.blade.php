@@ -40,65 +40,100 @@
                     <input value="{{$findInfoUser->username}}" type="text" name="username" id="" class="form-control" placeholder="" aria-describedby="helpId">
                     <small id="helpId" class="text-muted"></small>
                   </div>
-        
+          
                   <div class="form-group">
-                      <label for="email">Email</label>
-                      <input value="{{$findInfoUser->email}}" type="text" name="email" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <label for="avatar">avatar</label>
+                      <input value="{{$findInfoUser->avatar}}" type="file" name="avatar" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <small id="helpId" class="text-muted"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone"> Phone</label>
+                    <input value="{{$findInfoUser->phone}}" type="text" name="phone" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">10 chữ số</small>
+                </div>
+                  <div class="form-group">
+                    <label for="phone_2">phone_2</label>
+                    <input value="{{$findInfoUser->phone_2}}" type="text" name="phone_2" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">10 chữ số</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone_emergency"> phone_emergency </label>
+                    <input value="{{$findInfoUser->phone_emergency}}" type="text" name="phone_emergency" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">10 chữ số</small>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="sex">Sex</label>
+                      <input value="{{$findInfoUser->sex}}" type="text" name="sex" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <small id="helpId" class="text-muted">nam/nữ/giới tính khác</small>
+                  </div>
+          
+                  <div class="form-group">
+                      <label for="dob">dob</label>
+                      <input value="{{$findInfoUser->dob}}" type="text" name="dob" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <small id="helpId" class="text-muted">mm/dd/yyyy</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="national_id">national_id</label>
+                    <input value="{{$findInfoUser->national_id}}" type="text" name="national_id" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">id user dang nhap</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="national_id_image">national_id_image</label>
+                    <input value="{{$findInfoUser->national_id_image}}" type="text" name="national_id_image" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted"></small>
+                  </div>
+          
+                  <div class="form-group">
+                      <label for="driving_license">driving_license</label>
+                      <input value="{{$findInfoUser->driving_license}}" type="text" name="driving_license" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <small id="helpId" class="text-muted">10 chữ số</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="driving_license_image"> driving_license_image </label>
+                    <input value="{{$findInfoUser->driving_license_image}}" type="text" name="driving_license_image" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted"></small>
+                  </div>
+          
+                  <div class="form-group">
+                      <label for="address">address</label>
+                      <input value="{{$findInfoUser->address}}" type="text" name="address" id="" class="form-control" placeholder="" aria-describedby="helpId">
                       <small id="helpId" class="text-muted"></small>
                   </div>
           
                   <div class="form-group">
-                      <label for="numberphone">Number phone</label>
-                      <input value="{{$findInfoUser->numberphone}}" type="text" name="numberphone" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <small id="helpId" class="text-muted">10 số</small>
+                      <label for="relationship">relationship</label>
+                      <input value="{{$findInfoUser->relationship}}" type="text" name="relationship" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <small id="helpId" class="text-muted"></small>
+                  </div>
+          
+                  <div class="form-group">
+                      <label for="banks">banks</label>
+                      <input value="{{$findInfoUser->banks}}" type="text" name="banks" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <small id="helpId" class="text-muted"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="bio">bio</label>
+                    <input value="{{$findInfoUser->bio}}" type="text" name="bio" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="status">status</label>
+                    <input value="{{$findInfoUser->status}}" type="text" name="status" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted"></small>
                   </div>
 
                   <div class="form-group">
-                    <label for="cmnd">so chung minh tu</label>
-                    <input value="{{$findInfoUser->cmnd}}" type="text" name="cmnd" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                    <small id="helpId" class="text-muted"></small>
-                </div>
-          
-                  <div class="form-group">
-                      <label for="dateofbirth">Date of birth </label>
-                      <input value="{{$findInfoUser->dateofbirth}}" type="text" name="dateofbirth" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <small id="helpId" class="text-muted">yyyy/mm/dd</small>
-                  </div>
-          
-                  <div class="form-group">
-                      <label for="sex">Sex</label>
-                      <input value="{{$findInfoUser->sex}}" type="text" name="sex" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <small id="helpId" class="text-muted">nam / nữ / giới tính khác</small>
-                  </div>
-          
-                  <div class="form-group">
-                      <label for="address">Address</label>
-                      <input value="{{$findInfoUser->address}}" type="text" name="address" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <small id="helpId" class="text-muted">tỉnh/thành phố</small>
-                  </div>
-                  <div class="form-group">
                     <label for="user_id">User ID</label>
                     <input value="{{$findInfoUser->user_id}}" type="text" name="user_id" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                    <small id="helpId" class="text-muted">tỉnh/thành phố</small>
-                </div>
-                  {{-- <div class="form-group">
-                    <label for="exampleInputFile">File input</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                      </div>
-                      <div class="input-group-append">
-                        <span class="input-group-text" id="">Upload</span>
-                      </div>
-                    </div>
-                  </div> --}}
-                  {{-- <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                  </div> --}}
-                </div>
-                <!-- /.card-body -->
+                    <small id="helpId" class="text-muted">id user dang nhap</small>
+                  </div>
+                
+                  </div>
+                  <!-- /.card-body -->
 
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">UPDATE</button>

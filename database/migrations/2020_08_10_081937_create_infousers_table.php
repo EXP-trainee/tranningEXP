@@ -15,13 +15,22 @@ class CreateInfousersTable extends Migration
     {
         Schema::create('infousers', function (Blueprint $table) {
             $table->id();
-            $table->string('username');
-            $table->string('email');
-            $table->integer('numberphone');
-            $table->integer('cmnd');
-            $table->date('dateofbirth');
-            $table->string('sex');
-            $table->string('address');
+            $table->string('name');
+            $table->string('avatar')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('phone_2')->nullable();
+            $table->string('phone_emergency')->nullable();
+            $table->date('sex')->nullable();
+            $table->date('dob')->nullable();
+            $table->string('national_id')->nullable();
+            $table->string('national_id_image')->nullable();
+            $table->string('driving_license')->nullable();
+            $table->string('driving_license_image')->nullable();
+            $table->text('address')->nullable();
+            $table->string('relationship', 500)->nullable();
+            $table->json('banks')->nullable();
+            $table->text('bio')->nullable();
+            $table->tinyInteger('status')->default(1);
             $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

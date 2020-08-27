@@ -39,17 +39,21 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-                  <table class="table table-bordered">
+                  <table class="table table-bordered table-responsive ">
                     <thead>
                       <tr>
                           <th>STT</th>
                           <th>Full name</th>
-                          <th>email</th>
-                          <th>Number Phone</th>
-                          <th>CMND</th>
-                          <th>Date of Birth</th>
+                          <th>Number Phone</th>                         
                           <th>Sex</th>
-                          <th>Address</th>
+                          <th>Date of Birth</th>
+                          <th>national_id</th>
+                          <th>driving_license_image</th>
+                          <th>address</th>
+                          <th>relationship</th>
+                          <th>banks</th>
+                          <th>bio</th>
+                          <th>status</th>
                           <th>User ID</th>
                           <th>action</th>
                       </tr>
@@ -59,12 +63,20 @@
                       <tr>
                           <td>{{$item->id}}</td>
                           <td>{{$item->username}}</td>
-                          <td>{{$item->email}}</td>
-                          <td>{{$item->numberphone}}</td>
-                          <td>{{$item->cmnd}}</td>
-                          <td>{{$item->dateofbirth}}</td>
+                          <td>
+                            {{$item->phone}}
+                            {{$item->phone_2}}
+                            {{$item->phone_emergency}}
+                          </td>
                           <td>{{$item->sex}}</td>
+                          <td>{{$item->dob}}</td>
+                          <td>{{$item->national_id}}</td>
+                          <td>{{$item->driving_license_image}}</td>
                           <td>{{$item->address}}</td>
+                          <td>{{$item->relationship}}</td>
+                          <td>{{$item->banks}}</td>
+                          <td>{{$item->bio}}</td>
+                          <td>{{$item->status}}</td>
                           <td>{{$item->user_id}}</td>
                           <td>
                               <a href="{{route('infouser.edit',['infouser' => $item->id])}}" class="btn btn-primary"><i class="fa fa-edit " aria-hidden="true"></i></a>
@@ -83,15 +95,6 @@
                 </div> 
                 <!-- /.card-body -->
 
-                {{-- <div class="card-footer clearfix">
-                  <ul class="pagination pagination-sm m-0 float-right">
-                    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                  </ul>
-                </div> --}}
               </div>
               <!-- /.card -->
             </div>

@@ -42,29 +42,27 @@
                   </div>
           
                   <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="text" name="email" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <label for="avatar">avatar</label>
+                      <input type="file" name="avatar" id="" class="form-control" placeholder="" aria-describedby="helpId">
                       <small id="helpId" class="text-muted"></small>
                   </div>
-          
                   <div class="form-group">
-                      <label for="numberphone">Number Phone</label>
-                      <input type="text" name="numberphone" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <small id="helpId" class="text-muted">10 chữ số</small>
+                    <label for="phone"> Phone</label>
+                    <input type="text" name="phone" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">10 chữ số</small>
+                 </div>
+                  <div class="form-group">
+                    <label for="phone_2">phone_2</label>
+                    <input type="text" name="phone_2" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">10 chữ số</small>
                   </div>
 
                   <div class="form-group">
-                    <label for="cmnd"> so chung minh thu </label>
-                    <input type="text" name="cmnd" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <label for="phone_emergency"> phone_emergency </label>
+                    <input type="text" name="phone_emergency" id="" class="form-control" placeholder="" aria-describedby="helpId">
                     <small id="helpId" class="text-muted">10 chữ số</small>
-                </div>
-          
-                  <div class="form-group">
-                      <label for="dateofbirth">Date of birth </label>
-                      <input type="text" name="dateofbirth" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <small id="helpId" class="text-muted">yyyy/mm/dd</small>
                   </div>
-          
+
                   <div class="form-group">
                       <label for="sex">Sex</label>
                       <input type="text" name="sex" id="" class="form-control" placeholder="" aria-describedby="helpId">
@@ -72,32 +70,72 @@
                   </div>
           
                   <div class="form-group">
-                      <label for="address">Address</label>
-                      <input type="text" name="address" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <small id="helpId" class="text-muted">tỉnh /thành phố</small>
+                      <label for="dob">dob</label>
+                      <input type="text" name="dob" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <small id="helpId" class="text-muted">mm/dd/yyyy</small>
                   </div>
 
                   <div class="form-group">
-                    <label for="user_id">User ID</label>
-                    <input type="text" name="user_id" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <label for="national_id">national_id</label>
+                    <input type="text" name="national_id" id="" class="form-control" placeholder="" aria-describedby="helpId">
                     <small id="helpId" class="text-muted">id user dang nhap</small>
                   </div>
-                {{-- <div class="form-group">
-                  <label for="exampleInputFile">File input</label>
-                  <div class="input-group">
-                    <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="exampleInputFile">
-                      <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                    </div>
-                    <div class="input-group-append">
-                      <span class="input-group-text" id="">Upload</span>
-                    </div>
+                  <div class="form-group">
+                    <label for="national_id_image">national_id_image</label>
+                    <input type="text" name="national_id_image" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted"></small>
+                </div>
+        
+                <div class="form-group">
+                    <label for="driving_license">driving_license</label>
+                    <input type="text" name="driving_license" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">10 chữ số</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="driving_license_image"> driving_license_image </label>
+                  <input type="text" name="driving_license_image" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                  <small id="helpId" class="text-muted"></small>
+                </div>
+        
+                <div class="form-group">
+                    <label for="address">address</label>
+                    <input type="text" name="address" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted"></small>
+                </div>
+        
+                <div class="form-group">
+                    <label for="relationship">relationship</label>
+                    <input type="text" name="relationship" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted"></small>
+                </div>
+        
+                <div class="form-group">
+                    <label for="banks">banks</label>
+                    <input type="text" name="banks" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted"></small>
+                </div>
+                <div class="form-group">
+                  <label for="bio">bio</label>
+                  <input type="text" name="bio" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                  <small id="helpId" class="text-muted"></small>
+                </div>
+                <div class="form-group">
+                  <label for="status">status</label>
+                  <input type="text" name="status" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                  <small id="helpId" class="text-muted"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="user_id">User ID</label>
+                  <input type="text" name="user_id" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                  <small id="helpId" class="text-muted">id user dang nhap</small>
+                </div>
+                <div class="form-group">
+                    <label for="user_id">User ID</label>
+                    <input value="{{$findInfoUser->user_id}}" type="text" name="user_id" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">tỉnh/thành phố</small>
                   </div>
-                </div> --}}
-                {{-- <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div> --}}
               </div>
               <!-- /.card-body -->
 
