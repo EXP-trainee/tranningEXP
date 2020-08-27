@@ -131,11 +131,6 @@
                   <input type="text" name="user_id" id="" class="form-control" placeholder="" aria-describedby="helpId">
                   <small id="helpId" class="text-muted">id user dang nhap</small>
                 </div>
-                <div class="form-group">
-                    <label for="user_id">User ID</label>
-                    <input value="{{$findInfoUser->user_id}}" type="text" name="user_id" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                    <small id="helpId" class="text-muted">tỉnh/thành phố</small>
-                  </div>
               </div>
               <!-- /.card-body -->
 

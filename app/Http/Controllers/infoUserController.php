@@ -23,7 +23,7 @@ class infoUserController extends Controller
     public function index()
     {
         $listUser = InfoUser::all();  
-        $listUser = InfoUser::paginate(3);
+        $listUser = InfoUser::paginate(10);
         return view('admin.infouser.index', ['listUser' => $listUser]);
     }
 
@@ -45,16 +45,20 @@ class infoUserController extends Controller
      */
     public function store(Request $request)
     {
-        $infouser = new InfoUser;
-        $infouser->username = $request->username;
-        $infouser->email = $request->email;
-        $infouser->numberphone = $request->numberphone;
-        $infouser->cmnd = $request->cmnd;
-        $infouser->dateofbirth = $request->dateofbirth;
-        $infouser->sex = $request->sex;
-        $infouser->address = $request->address;
-        $infouser->user_id = $request->user_id;
-        $infouser->save();
+        // $infouser = new InfoUser;
+        // $infouser->username = $request->username;
+        // $infouser->email = $request->email;
+        // $infouser->numberphone = $request->numberphone;
+        // $infouser->cmnd = $request->cmnd;
+        // $infouser->dateofbirth = $request->dateofbirth;
+        // $infouser->sex = $request->sex;
+        // $infouser->address = $request->address;
+        // $infouser->user_id = $request->user_id;
+        // $infouser->save();
+        
+        $this->validate($request, InfoUser::rules());
+        // dd(User::create($request->all()))
+        InfoUser::create($request->all());
         return redirect(route('infouser.index'));
     }
 
@@ -78,7 +82,9 @@ class infoUserController extends Controller
     public function edit($id)
     {
         $findInfoUser = InfoUser::find($id);
-        return view('admin.infouser.edit',['findInfoUser' => $findInfoUser]);
+
+        $findInfoUser = InfoUser::findOrFail($id);
+        return view('admin.infouser.edit', compact('findInfoUser'));
     }
 
     /**
@@ -90,17 +96,13 @@ class infoUserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $findUpdate = InfoUser::find($id);
-        $findUpdate->username = $request->username;
-        $findUpdate->email = $request->email;
-        $findUpdate->numberphone = $request->numberphone;
-        $findUpdate->cmnd = $request->cmnd;
-        $findUpdate->dateofbirth = $request->dateofbirth;
-        $findUpdate->sex = $request->sex;
-        $findUpdate->address = $request->address;
-        $findUpdate->user_id = $request->user_id;
-        $findUpdate->save();
-        return redirect(route('infouser.index'));
+        $this->validate($request, InfoUser::rules(true, $id));
+
+        $findInfoUser = InfoUser::findOrFail($id);
+
+        $findInfoUser->update($request->all());
+
+        return redirect()->route('infouser.index')->withSuccess(trans('app.success_update'));
     }
 
     /**
